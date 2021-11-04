@@ -3,16 +3,61 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="Styles/BaseStyle.css">
+	<script src="Scripts/Animations.js"></script>
 	<title>Календарь</title>
 </head>
 <body>
-	<header ></header>
-	<div class="Container" >
-		<h1>Hi</h1>
-	</div>
-	<footer>
-		
-	</footer>
+	<div id="wrapper">
+		<div id="content">
+			<div id="nav">
+				<div class="dropdown">
+					<button class="dropbtn"><img src="Images/Logo.png"/></button>
+					<div class="dropdown-content">
+						<a href="#" onclick="profile('block')">Профиль</a>
+						<a href="#">Отчёты</a>
+						<a href="#">График</a>
+						<a href="#">Заявки</a>
+						<a href="#">Услуги</a>
+						<a href="#">Графики посещаемости</a>
+						<a href="#">Пользователи</a>
+						<a href="#">Настройки</a>
+						<a href="#">Осмотры пациентов</a>
+						<a href="#">Записи пациентов</a>
+						<a href="#">Новости</a>
+						<a href="#">Компании</a>
+						<a href="#">Склад</a>
+						<a href="#">Акции</a>
+					</div>
+				</div>
+				<div class="calendarick">
+					<input type="date" name="calendar" id="calendarick">
+				</div>
 
+			</div>
+			<div id="main">
+
+				<div id="gray" onclick="profile('none')"></div>
+				<div id="window">
+					<img src="Images/close.png" class="close" alt="" onclick="profile('none')">
+					<div class="form">
+				<h2>Профиль</h2>
+				<form action="CalendarPage.html" name="f1">
+					<input type="text" placeholder="Фамилия" name="firstName" class="input">
+					<input type="text" placeholder="Имя" name="secondName" class="input">
+					<input type="text" placeholder="Отчество" name="middleName" class="input">
+					<input type="email" placeholder="Почта" name="email1" class="input">
+					<input type="text" placeholder="Логин" name="login" class="input">
+					<input type="password" placeholder="Пароль" name="password1" class="input">
+					<input type="tel" placeholder="Номер" name="phone" class="input">
+					<input type="submit" value="Сохранить" name="save" class="input" id="saveButton">
+				</form>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
 </body>
 </html>
